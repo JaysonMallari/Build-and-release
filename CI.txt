@@ -1,0 +1,17 @@
+
+https://www.dropbox.com/sh/qcalz2lqn923bkr/AAAXnhk7Kx-JtDjUA6mAfitda?dl=0
+
+CI - Continous Integration
+	-is automation of build and deployment.
+	
+	why do we automate build and deployment?
+		-to make the release better.
+		- jenkins or hudson - tools that wrap around version control system.
+		
+	What is build?
+		- build is you will take out the souce code, you will run you ant or maven scripts to a package the code.
+		-(1) which version control system (1.5) need to which branch were building. (2) which build tools(ant or maven)and where is the build or pom scripts.
+		
+	
+UAT -  User Acceptance Testing
+

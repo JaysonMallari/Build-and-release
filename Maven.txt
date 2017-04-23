@@ -1,0 +1,34 @@
+Maven is a project management and comprehension tool.
+
+- standard directories structures.
+- standard life cycle.  Step by step.
+
+provides developers ways to manage the ff
+
+Builds
+Documenntation
+Reporting
+Dependencies
+SCMs
+Releases
+Distribution
+mailing list
+
+POM - Project Object Model
+	- xml file
+
+to check maven 
+	mvn --version
+	
+BUILD LIFE CYCLE
+	clean
+	default
+	site
+	
+	mvn clean dependency:copy-dependencies package
+
+CLEAN LIFE CYCLE
+	pre-clean
+	clean
+	post-clean
+	
