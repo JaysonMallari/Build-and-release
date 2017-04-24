@@ -16,6 +16,12 @@ mailing list
 
 POM - Project Object Model
 	- xml file
+		SEQUENCE
+			Name
+			version
+			packaging
+			dependencies
+			plugins
 
 to check maven 
 	mvn --version
@@ -31,4 +37,49 @@ CLEAN LIFE CYCLE
 	pre-clean
 	clean
 	post-clean
+	
+commands
+
+mvn BUILD life cycle
+	validate
+	compile
+	test
+	package
+	integration test
+	verify
+	install
+	
+
+mvn archetype:generate -DgroupId=com.sample -DartifactId=helloWorld -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+mvn compile
+mvn test-compile
+mvn test
+mvn clean
+mvn install
+//clean the entire pom included the super pom
+mvn effective-pom
+mvn help:effective-pom
+mvn clean install
+//to run a war files
+mvn tomcat7:run
+//debug
+mvn -X clean 
+mvn dependency:tree
+mvn dependency:sources
+//show tye local repositories
+mvn help effective-settings
+
+mvn archetype:generate
+
+SNAPSHOT - indicates that it is still in development.
+		 - should be remove for a release version
+		 
+		 major version 1.0,2.0 -- big change
+		 minor version 1.1 -- little changes
+		 incremental version 1.0.1 -- very small change like a bug fix
+		 
+		 
+transitive dependencies -- 
+
 	
