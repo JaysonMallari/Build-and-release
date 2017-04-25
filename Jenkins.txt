@@ -1,0 +1,60 @@
+Jenkins
+ubuntu dir --> ./usr/share/jenkins/jenkins.war
+/home/server01/.jenkins/secrets/initialAdminPassword --cb2d2aae5436480fb794e69b43ac723d	
+ sudo service jenkins restart
+link server -- http://192.168.121.140:8080/
+username renzmallari777
+pw p******2
+email renzmallari777@ym
+
+wh should we run JENKINS on TOMCAT instead of standalone jenkins(default jetty/winstone)?
+	-types of servlettes conatainer
+		Glassfish
+		TOMCAT
+		JBoss
+		IBM WebSphere
+		Jetty
+		Jonas
+		Weblogic
+		Apache Geronimo 3.0
+		Liberty Profile
+		
+on Tomcat/bin make all the sh executable
+	chmod +x *.sh
+	
+to start Tomcat/bin
+	./startup.sh
+	
+to stop Tomcat/bin
+	./shutdown.sh
+	
+to satart jenkins with tomcat
+	localhost:8080/jenkins
+	
+COPY jenkins.war
+	~/TOMCAT/webapps/jenkins.war
+	
+CHANGE JENKINS DIRECTORY
+	/home/server01/.jenkins	Help for feature: Home directory
+	
+	JENKINS_HOME=directory
+
+SAVE II TO BASH_PROFILE
+	/home/username/.bash_profile
+	
+	export JENKINS_HOME=/home/server01/program_files/Jenkins_home
+	
+Properties -- http://192.168.121.140:8081/jenkins/systemInfo
+
+	
+to change jenkins port number
+	--> java -jar jenkins.war --httpPort=9090
+	
+	
+COMMAND LINE JENKINS
+	http://192.168.121.140:8081/jenkins/cli/
+	wget http://192.168.121.140:8081/jenkins/jnlpJars/jenkins-cli.jar
+	
+	java -jar jenkins-cli.jar -s http://192.168.121.140:8080/ help
+	
+	$ java -jar jenkins-cli.jar -s http://localhost:8080/ help --username jenkins --password foobar
